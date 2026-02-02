@@ -89,6 +89,7 @@ startBtn.addEventListener("click", () => {
     quizQuestionsCard.style.display = "block";
     quizStartCard.style.display = "none";
 
+    updateProgressBar();
     showQuestions();
 });
 
