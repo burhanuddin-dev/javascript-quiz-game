@@ -88,8 +88,7 @@ startBtn.addEventListener("click", () => {
 
     quizQuestionsCard.style.display = "block";
     quizStartCard.style.display = "none";
-
-    updateProgressBar();
+        
     showQuestions();
 });
 
@@ -97,6 +96,11 @@ restartBtn.addEventListener('click', () => {
 
     quizResultCard.style.display = "none";
     quizStartCard.style.display = "block";
+
+        score = 0;
+    currentQuestionIndex = 0;
+
+    progressBar.style.width = "0%";
 });
 
 function showQuestions() {
